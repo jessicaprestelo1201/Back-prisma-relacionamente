@@ -1,4 +1,4 @@
-import prisma from "../../prisma/prisma.js";
+import prisma from "../../prisma/client.js"
 
 class CollectionModel {
   // Obter todos as coleções
@@ -12,7 +12,7 @@ class CollectionModel {
       },
     });
 
-    console.log(colecoes);
+    //console.log(colecoes);
 
     return colecoes;
   }
